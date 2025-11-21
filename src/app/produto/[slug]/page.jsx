@@ -14,7 +14,8 @@ async function fetchProdutoPorSlug(slug) {
 }
 
 export default async function ProdutoPage({ params }) {
-  const produto = await fetchProdutoPorSlug(params.slug);
+  const slugInt = parseInt(params.slug);
+  const produto = await fetchProdutoPorSlug(slugInt - 1);
   return (
     <main className={styles.main}>
       <Produto produto={produto} />
@@ -27,5 +28,5 @@ export async function generateStaticParams() {
 
   const produtos = await res.json();
 
-  return produtos.map((produto) => ({ slug: (produto.id - 1).toString() }))
+  return produtos.map((produto) => ({ slug: produto.id.toString() }))
 }
