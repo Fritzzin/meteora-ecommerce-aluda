@@ -19,19 +19,11 @@ As principais técnicas e tecnologias abordadas são:
 - `React Components`: Componentes reutilizáveis.
 - `Web server`: Como hospedar o site.
 
-## 🎯 Desafios do Curso
-
-- O principal desafio será converter as rotas dinâmicas da página de detalhes do produto em páginas estáticas exportadas.
-
 ## 🛠️ Abrir e rodar o projeto
 
 Após baixar o projeto, você pode abrir com seu editor de código preferido. Siga estes passos:
 
 - Abra o terminal no diretório do projeto.
-- Execute `yarn` para instalar as dependências.
-- Inicie o servidor de desenvolvimento com `yarn dev`.
+- Execute `npm` para instalar as dependências.
+- Inicie o servidor de desenvolvimento com `npm run dev`.
 - Acesse `http://localhost:3000` no navegador para ver o projeto.
-
-## 📚 Mais Informações do Curso
-
-Interessado em aprofundar seus conhecimentos em Next.js e SSR? [Acesse o curso]()!
